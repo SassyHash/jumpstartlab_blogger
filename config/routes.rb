@@ -1,5 +1,10 @@
 Blogger::Application.routes.draw do
-  resource :comments
+  get "tags/index"
+
+  get "tags/show"
+
+  resources :tags
+  resources :comments
   resources :articles
 
 end
